@@ -1,0 +1,69 @@
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+body {
+  background-color: #bddaf7; /* Fondo suave */
+  font-family: 'Quicksand', sans-serif; /* Fuente animada */
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  max-width: 1900px; /* Tamaño máximo en pantallas grandes */
+  min-width: 300px; /* Tamaño mínimo para pantallas muy pequeñas */
+  width: 90%; /* Ocupará el 90% del ancho de la pantalla */
+  margin: 0 auto; /* Centrado horizontal */
+  padding: 80px; /* Espaciado interno */
+  background-color: #ddcfc4; /* Color de fondo */
+  border: 2px dashed rgb(96, 11, 11); /* Borde decorativo */
+  border-radius: 20px; /* Bordes redondeados */
+  box-shadow: 0 8px 9px rgba(38, 34, 34, 0.1); /* Sombra */
+}
+.p-field.p-col-12 {
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+
+.p-fluid {
+  width: 100%; /* Ajusta el ancho del formulario */
+}
+
+.p-formgrid {
+  display: flex; 
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+  gap: 20px; /* Espacio entre las columnas */
+}
+
+.p-formgrid .p-field {
+  flex: 1 1 48%; /* Cada campo ocupará aproximadamente el 48% del ancho */
+  max-width: 48%; /* Asegura que no ocupe más de la mitad del ancho */
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    padding: 20px; /* Reduce el padding en pantallas pequeñas */
+  }
+
+  .p-formgrid .p-field {
+    flex: 1 1 100%; /* Los campos ocuparán todo el ancho en pantallas pequeñas */
+  }
+
+  .p-button {
+    width: 100%; /* Los botones ocuparán todo el ancho */
+  }
+}
+
+
